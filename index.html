@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Sistema de turnos | Dra. Veronica Sanchez</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid p-lg-3">
+            <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="iconify icon_size_small" data-icon="bx:bx-menu-alt-right" data-inline="false"></span>
+            </button>
+            <a class="navbar-brand animate__animated animate__bounceInLeft" href="#">
+                <span class="iconify " data-icon="openmoji:tooth" data-inline="false"></span>
+                Dra. Veronica Sanchez
+            </a>
+            <div class="collapse navbar-collapse animate__animated animate__bounceInLeft"  id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">¿Como sacar turno?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Preguntas frecuentes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-5">
+            <div class="m-lg-5 mb-5 text-center">
+                <h1 class="mx-2">Reserva tu turno</h1>
+            </div>
+            <div class="row ">
+                <div class="col-6">
+                    <a href="#"><button type="button" class="btn ms-lg-5 p-1" id="boton1">Paciente Nuevo</button></a>
+                </div>
+                <div class="col-6">
+                    <a href="#"><button type="button" class="btn ms-lg-5 p-1" id="boton2">Paciente Habitual</button></a>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-12">
+                    <a href="#"><button type="button" class="btn p-0">Consulta unica</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="borde"></div>
+        <div class="container-fluid mt-5">
+            <div class="m-lg-5 mb-5 text-center">
+                <h2 class="mx-2">Formas de contacto</h2>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="#" class="text-decoration-none" id="ubicacion">
+                    <div>
+                        <span class="iconify icon_size_big offset-3 offset-lg-5 "  data-icon="fa-solid:map-marked-alt" data-inline="false"></span>
+                        <p class="text-center mt-2 mt-lg-4 offset-lg-1 text-dark">Ubicacion</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class=" text-decoration-none" id="whatsapp">
+                    <div>
+                        <span class="iconify icon_size_big offset-3 offset-lg-5"  data-icon="cib:whatsapp" data-inline="false"></span>
+                        <p class="text-center mt-2 mt-lg-4 offset-lg-1 text-dark">Whatsapp</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class=" text-decoration-none" id="telefono">
+                        <div>
+                            <span class="iconify icon_size_big offset-3 offset-lg-5"  data-icon="entypo:old-phone" data-inline="false"></span>
+                            <p class="text-center mt-2 mt-lg-4 offset-lg-1 text-dark">Telefono</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="borde"></div>
+        <div class="tabla mb-5">
+            <h2 class="text-center mt-5">Precios por consultas particulares sin obra social:</h2>
+            <table class="text-center">
+                <thead>
+                    <tr>
+                        <th class="gradiente1">Tipo de consultas</th>
+                        <th class="gradiente2">Aranceles</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Consulta particular</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>Consulta particular a domicilio</td>
+                    <td>$1200</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer class="bg-dark text-center text-white mt-5">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"><span class="iconify" data-icon="fa-brands:facebook-f" data-inline="false"></span></a>
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"><span class="iconify" data-icon="radix-icons:twitter-logo" data-inline="false"></span></i></a>
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"><span class="iconify" data-icon="bi:instagram" data-inline="false"></span></a>
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/" role="button"><span class="iconify" data-icon="dashicons:linkedin" data-inline="false"></span></i></a>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="#">VSanchez.com.ar</a>
+        </div>
+    </footer>
+</body>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</html>

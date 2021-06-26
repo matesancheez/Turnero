@@ -1,0 +1,270 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&family=Prompt:wght@100;200;300;400&family=Roboto:wght@100;300;400&display=swap');
+
+
+.gradiente1{
+    background: linear-gradient(90deg, #ADA7FF,  #e4c8fd);
+}
+
+.gradiente2{
+    background: linear-gradient(90deg, #e4c8fd,  #ADA7FF);
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+//Nav
+nav{
+    background-color: #DFE7FD ;
+    .navbar-brand{
+        .iconify{
+            width:3rem; 
+            height: 3rem;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    nav{
+        .navbar-brand{
+            .iconify{
+                width:1.5rem; 
+                height: 1.5rem;
+            }
+        }
+    }
+}
+//Nav fin
+
+//Carrusel
+.carousel-inner{
+    img{
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel-inner{
+        img{
+            width: 100%;
+            height: 30vh;
+            object-fit: cover;
+        }
+    }
+}
+//Fin del carrusel
+
+//Botones
+.container-fluid{
+    h1{
+        font-size: 3rem;
+        margin-top: 10vh;
+    }
+    .row{
+        margin-top: 10vh;
+        .col-6{
+            #boton1{
+                width: 40vw;
+                height: 8vh;
+                border: solid 0.5px #000;
+                font-size: 1.5rem; 
+                border-radius: 30px;
+                transition: 0.5s;
+                background: linear-gradient(90deg, #ADA7FF,  #e4c8fd);
+            }
+            #boton2{
+                width: 40vw;
+                height: 8vh;
+                border: solid 0.5px #000;
+                font-size: 1.5rem; 
+                border-radius: 30px;
+                transition: 0.5s;
+                background: linear-gradient(50deg, #0096C7,  #ADE8F4);
+            }
+            #boton1:hover{
+                width: 42vw;
+                height: 8vh;
+                color: rgba($color: #000000, $alpha: 0.5);
+                background: linear-gradient(50deg, #a7a1f7,  #E0C3FC);
+            }
+            #boton2:hover{
+                width: 42vw;
+                height: 8vh;
+                color: rgba($color: #000000, $alpha: 0.5);
+                background: linear-gradient(50deg, #008ebd,  #97ceda);
+            }
+        }
+        .col-12{
+            button{
+                padding: 0;
+                width: 50vw;
+                height: 8vh;
+                border: solid 0.5px #000;
+                margin-left: 25vw;
+                font-size: 1.5rem;
+                border-radius: 30px;
+                transition: 0.5s;
+                background: linear-gradient(50deg, #fdb4eb,  #c0fdff);
+            }
+            button:hover{
+                width: 52vw;
+                color: rgba($color: #000000, $alpha: 0.5);
+                background: linear-gradient(50deg, #ffbfef,  #b3fcff);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container-fluid{
+        h1{
+            font-size: 1.5rem;
+            margin-top: 0vh;
+        }
+        .row{
+            margin-top: 0vh;
+            .col-6{
+                #boton1{
+                    height: 6vh;
+                    font-size: 0.9rem;
+                }
+                #boton2{
+                    height: 6vh;
+                    font-size: 0.9rem;
+                }
+                #boton1:hover{
+                    height: 6vh;
+                }
+                #boton2:hover{
+                    height: 6vh;
+                }
+            }
+            .col-12{
+                button{
+                    width: 50vw;
+                    height: 6vh;
+                    margin-top: 5vh;
+                    margin-left: 20vw;
+                    font-size: 0.9rem;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+}
+
+//Botones fin
+
+//Parte de contacto
+.borde{
+    width: 70vw;
+    border-top: solid black 1px;
+    margin-left: 15vw;
+    margin-top: 7vh;
+}
+
+.icon_size_big{
+    width: 7rem;
+    height: auto;
+    display: block;
+}
+
+.icon_size_medium{
+    width: 2rem;
+    height: auto;
+}
+
+
+#ubicacion{
+    div{
+        color: black;
+        transition: color 0.5s;
+    }
+    :hover{
+        color:  #db4a39;
+    }
+}
+
+#whatsapp{
+    div{
+        color: black;
+        transition: color 0.5s;
+    }
+    :hover{
+        color: #00bb2d;
+    }
+}
+
+#telefono{
+    div{
+        color: black;
+        transition: color 0.5s;
+    }
+    :hover{
+        color: #4EA8DE;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .icon_size_medium{
+        width: 2rem;
+        height: auto;
+    }
+    .icon_size_big{
+        width: 3rem;
+        height: auto;
+        display: block;
+    }
+}
+// Parte de contacto fin
+
+//Tabla
+
+.tabla{
+    table{
+        margin-left: 25vw;
+        margin-top: 10vh;
+        font-size: 1.5rem;
+        width: 50vw;
+        height: auto;
+        tr{
+            th{
+                padding: 2vh 2vw;
+                border-right: black solid 0.5px ;
+            }
+            td{
+                padding: 2vh 2vw;
+                border-right: black solid 0.5px ;
+            }
+            border: black solid 0.5px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    .tabla{
+        table{
+            margin-left: 5vw;
+            font-size: 0.9rem;
+            width: 90vw;
+            height: auto;
+            tr{
+                th{
+                    padding: 1vh 1vw;
+                    border-right: black solid 0.5px ;
+                }
+                td{
+                    padding: 1vh 1vw;
+                    border-right: black solid 0.5px ;
+                }
+                border: black solid 0.5px;
+            }
+        }
+    }
+}
+
+//Tabla fin
